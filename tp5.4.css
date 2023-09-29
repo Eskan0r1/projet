@@ -1,0 +1,51 @@
+header{
+	background-color: #3498db;
+	color: #fff;
+	text-align: center;
+	padding: 30px;
+	font-family: Stencil Std, fantasy;
+    font-size: 45px;
+    border-radius: 12px;
+    border-color: white;
+    border:solid 6px;
+    
+
+}
+section{
+	background-color: lightgray;
+	height: 540px;
+	width: 525px;
+float: left;
+	margin: 50px;
+}
+footer{
+background-color: #3498db;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-family: Stencil Std, fantasy;
+    font-size: 35px;
+    border-radius: 12px;
+    
+    border:solid 6px;
+clear: both;
+
+}
+h1{
+background-color: #3498db;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	font-family: Stencil Std, fantasy;
+    font-size: 35px;
+    border-radius: 12px;
+    border:solid 6px;
+
+
+}
+p{
+font-size: 50px;
+text-align: center;
+font-family: Stencil Std, fantasy;
+
+}
