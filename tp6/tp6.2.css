@@ -1,0 +1,23 @@
+button
+{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    margin: 100px;
+    border-radius: 10px;
+    border: solid 5px white;
+    font-size: 30px;
+
+}
+button:hover
+{
+cursor: pointer;
+background-color: aliceblue;
+color: black;
+border-radius: 3px;
+}
+body
+{
+    background-color: aquamarine;
+}
