@@ -1,0 +1,173 @@
+header{
+    background-color: #3498db;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    font-family: Stencil Std, fantasy;
+    font-size: 20px;
+    border-radius: 12px;
+    border-color: white;
+    border:solid 6px;
+   margin-bottom: 8px;
+
+    
+
+}
+iframe
+{
+    height: 600px;
+    width: 1300px;
+    border: solid 6px;
+    border-radius: 12px;
+    margin-left: 35px;
+    margin-top:20px;
+}
+div.photo
+{
+    border: solid 6px;
+    border-radius: 12px;
+    float: right;
+    margin-top: 20px;
+    height: 244px;
+
+
+}
+footer{
+background-color: #3498db;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-family: Stencil Std, fantasy;
+    font-size: 35px;
+    border-radius: 12px;
+    
+    border:solid 6px;
+clear: both;
+
+}
+div.center{
+    float:left;
+    
+margin-left: 30px;  
+    width: 1580px;
+border-radius: 12px;
+border:solid 6px;
+margin-bottom: 8px;
+   height: 650px;
+
+}
+
+div#menu
+{
+    background-color: #3498db;
+    height: 650px;
+
+float: left;
+margin-right: auto;
+margin-left: auto;
+    width: 250px;
+border-radius: 12px;
+border:solid 6px;
+margin-bottom: 8px;
+}
+
+div#menu ul
+{
+    padding: 0;
+    width: 100px; /*to change width of menu*/
+    border: 1px solid;
+    margin: 0px;
+
+
+
+   }
+
+/*On positionne les elements du menu*/
+div#menu ul li
+{
+    position: relative;
+    list-style: none;
+    border-bottom: 1px solid;  /*bordure de séparations d'élément*/
+
+
+}
+
+
+div#menu ul ul
+{
+    position: absolute;
+    top: 0;
+    left: 100px; /*100px correspond au décalage a droite, on décale de la taille du ul de base*/
+
+}
+
+div#menu li a
+{
+    text-decoration: none;
+
+}
+
+div#menu ul ul
+{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    display: none;
+
+}
+
+div#menu ul.niveau1 li.sousmenu:hover ul.niveau2,
+div#menu ul.niveau2 li.sousmenu:hover ul.niveau3
+{
+    display: block;
+
+}
+
+/*fond blanc pour le menu*/
+div#menu a
+{
+    color: #000000;
+
+}
+
+/*fond different au survol de la souris entre les sous menu et les basique*/
+div#menu li:hover
+{
+    background: #EDD;
+
+}
+
+/*on rajoute une bordure a gauche et des paddings, on doit doc reajuster la taille 100 de bordure +8 de padding -84*/
+
+div#menu li.sousmenu:hover
+{
+    background: #EBB;
+}
+
+div#menu li a
+{
+    text-decoration: none;
+    padding: 4px 0 4px 8px;
+    display: block;
+    border-left: 8px solid #BBB;
+    width: 84px;
+
+
+}
+
+/*la bordure de chaque couleur a une couleur de survol*/
+div#menu li a:hover
+{
+    border-left-color: blueviolet;
+}
+
+div#menu ul ul li a:hover
+{
+    border-left-color: #00FF00;
+}
+div#menu ul ul ul li a:hover
+{
+    border-left-color: #0000FF;
+
+
+}
