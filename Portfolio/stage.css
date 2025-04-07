@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+    background-image: url('image6.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajuste pour éviter le débordement */
+    gap: 20px;
+    width: 90%;
+    max-width: 1600px;
+}
+
+/* Photo Card */
+.photo-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 15px;
+    word-wrap: break-word; /* Évite les débordements de texte */
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Images */
+.photo-card img {
+    width: 100%;
+    height: auto;
+    max-height: 180px; /* Ajuste la taille des images */
+    object-fit: cover;
+    display: block;
+}
+
+/* Description */
+.description {
+    text-align: center;
+    padding: 10px;
+}
+
+.description h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.description p,
+.description ul,
+.description ol {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.4;
+    margin: 5px 0;
+}
+
+/* Empêcher les textes de dépasser */
+.description a {
+    word-break: break-word; /* Coupe les longs liens */
+    display: block;
+    overflow-wrap: break-word;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Une seule colonne sur petits écrans */
+    }
+}

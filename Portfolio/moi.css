@@ -1,0 +1,94 @@
+/* Global Styles */
+body {
+    background-image: url('image6.jpeg'); /* Assurez-vous que le nom est exact */
+    background-size: cover; /* L'image couvre tout l'arrière-plan */
+    background-repeat: no-repeat; /* Évite toute répétition */
+    background-position: center; /* Centre l'image dans l'espace */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Photo Card */
+.photo-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.photo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Photo */
+.photo-card img {
+    width: 100%;
+    height: 200px; /* Uniformité des tailles d'image */
+    object-fit: cover;
+    display: block;
+}
+
+/* Description */
+.description {
+    padding: 15px;
+}
+
+.description h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.description ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.description ul li {
+    margin: 5px 0;
+}
+
+/* Social Links */
+.social-links a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .description h3 {
+        font-size: 1.2em;
+    }
+
+    .description p {
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,72 @@
+/* Ajout d'un fond en dégradé pour le body */
+body {
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    font-family: Arial, sans-serif; /* Police pour un rendu plus propre */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Pour remplir tout l'écran */
+}
+
+/* Styles pour la classe .rectangle */
+.rectangle {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec un peu de transparence */
+    width: 25%;
+    max-width: 380px; /* Limite la largeur maximum */
+    height: 380px;
+    margin: 0 auto; /* Centrage horizontal */
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px; /* Ajout d'un padding plus important pour plus d'espace intérieur */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transition plus fluide */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Effet hover pour .rectangle */
+.rectangle:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.9); /* Légère augmentation de l'opacité au hover */
+}
+
+/* Styles pour la classe .rond */
+.rond {
+    border-radius: 50%;
+    border: 3px solid #000;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px; /* Ajout d'espace en bas pour séparer du texte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style pour les liens */
+.rectangle a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 5px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.rectangle a:hover {
+    color: #555; /* Couleur des liens au survol */
+}
+
+/* Style pour le h1 et les paragraphes */
+.rectangle h1 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.rectangle p {
+    margin: 5px 0;
+    font-size: 1em;
+}
